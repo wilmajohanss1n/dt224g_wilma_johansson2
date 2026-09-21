@@ -65,7 +65,7 @@ nav a {
 }
 
 .natur {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #6b6868;
     text-align: center;
     padding: 25px 15px;
 }
@@ -167,3 +167,139 @@ ul {
     margin: 0;
 
  }
+
+@media (min-width: 768px) {
+
+    .logotyp {
+        display: flex;
+        align-items: center;
+    }
+
+    .logotyp h1 {
+        margin: 0 0 0 10px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        nav { 
+            width: auto;
+        }
+    
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+    
+
+        .hero {
+            position: relative;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translate(-50%);
+            color: white;
+            width: 350px;
+        }
+
+        .hero-text h2 {
+            margin: 0 0 10px;
+        }
+
+        .hero-text p {
+            margin: 0 0 20px;
+        }
+
+        .hero img {
+            width: 100%;
+            display: block;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(13, 43, 14);
+            color:#f7f5f5;
+            text-decoration: none;
+
+
+        }
+
+
+    .upplevelser {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .kort {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+     
+    .planera {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        text-align: left;
+        padding: 30px;
+    }
+        
+    .planera h2, .planera p {
+        grid-column: 1;
+    }
+    .planera h2 {
+        margin-top: 0;
+    }
+
+    .planera p{
+        max-width: 500px;
+    }
+    .planera .button {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        margin: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px 80px;
+     }
+
+     .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+     }
+
+     .footer-contact {
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        align-items: flex-start;
+        margin-right: 80px;
+     }
+
+     .footer-column {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+     }
+     
+     .footer-column p {
+        margin: 2px 0;
+     }
+
+}
+
+
+
+
+
